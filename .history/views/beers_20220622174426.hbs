@@ -1,0 +1,12 @@
+<h2>Todas las cervezas son:</h2>
+{{#each beersArrayOfObjects}}
+  <img
+    src='{{this.image_url}}'
+    alt='{{this.name}}'
+    height='400px'
+    width='300px'
+  />
+  <h3>{{this.name}}</h3>
+  <p>{{this.description}}</p>
+
+{{/each}}
